@@ -52,7 +52,7 @@ export function Menu(){
             <div className="svg-container">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 799.6 1080" style={{ "enable-background":"new 0 0 799.6 1080" }}>
-                <g onClick={(e) => HandleClick("derecho-laboral", "Derecho laboral")}>
+                <g className="pointer" onClick={(e) => HandleClick("derecho-laboral", "Derecho laboral")}>
                     
                         <linearGradient id="Rectángulo_23_1_" gradientUnits="userSpaceOnUse" x1="-557.515" y1="1080.1008" x2="-557.511" y2="1081.4448" gradientTransform="matrix(188.062 -188.062 -188.0606 -188.0606 308743.2812 98680.2578)">
                         <stop  offset="0" style={{ "stop-color":"#BF5243" }}/>
@@ -134,7 +134,7 @@ export function Menu(){
                         </g>
                     </g>
                 </g>
-                <g onClick={(e) => HandleClick("deudas-y-bancos", "Deudas y bancos")} transform="translate(-1874.299 3176.104)">
+                <g className="pointer" onClick={(e) => HandleClick("deudas-y-bancos", "Deudas y bancos")} transform="translate(-1874.299 3176.104)">
                     
                         <linearGradient id="Rectángulo_23-2_1_" gradientUnits="userSpaceOnUse" x1="1316.0996" y1="-2095.1113" x2="1317.5137" y2="-2095.1113" gradientTransform="matrix(188.0606 -188.0606 -188.062 -188.062 -639575.875 -149316.25)">
                         <stop  offset="1.000000e-03" style={{"stop-color":"#C49541"}}/>
@@ -255,7 +255,7 @@ export function Menu(){
                         </g>
                     </g>
                 </g>
-                <g onClick={(e) => HandleClick("familia-y-divorcio", "Familia y divorcio")} transform="translate(-2269.713 3177.257)">
+                <g className="pointer" onClick={(e) => HandleClick("familia-y-divorcio", "Familia y divorcio")} transform="translate(-2269.713 3177.257)">
                     
                         <linearGradient id="Rectángulo_23-3_1_" gradientUnits="userSpaceOnUse" x1="1711.5015" y1="-2096.2644" x2="1712.9155" y2="-2096.2644" gradientTransform="matrix(188.089 -188.089 -188.0904 -188.0904 -713663.3125 -74984.4062)">
                         <stop  offset="0" style={{"stop-color":"#6F6F77"}}/>
@@ -349,7 +349,7 @@ export function Menu(){
                         </g>
                     </g>
                 </g>
-                <g onClick={(e) => HandleClick("arriendos", "Arriendos")}>
+                <g className="pointer" onClick={(e) => HandleClick("arriendos", "Arriendos")}>
                     
                         <linearGradient id="Rectángulo_23-4_1_" gradientUnits="userSpaceOnUse" x1="-557.5038" y1="1080.1288" x2="-557.5178" y2="1081.5427" gradientTransform="matrix(188.062 -188.062 -188.0606 -188.0606 308743.2812 99081.2578)">
                         <stop  offset="0" style={{"stop-color":"#5A42C1"}}/>
@@ -425,7 +425,7 @@ export function Menu(){
                         </g>
                     </g>
                 </g>
-                <g onClick={(e) => HandleClick("pensiones", "Pensiones")} transform="translate(-1451.585 3181.255)">
+                <g className="pointer" onClick={(e) => HandleClick("pensiones", "Pensiones")} transform="translate(-1451.585 3181.255)">
                     
                         <linearGradient id="Rectángulo_23-5_1_" gradientUnits="userSpaceOnUse" x1="893.4216" y1="-2100.2622" x2="894.8356" y2="-2100.2622" gradientTransform="matrix(188.089 -188.089 -188.0904 -188.0904 -561556.4375 -229419.2031)">
                         <stop  offset="0" style={{"stop-color":"#41C4B4"}}/>
@@ -576,7 +576,7 @@ export function Menu(){
                         </g>
                     </g>
                 </g>
-                <g onClick={(e) => HandleClick("otros", "Otros")} transform="translate(0.001 0.001)">
+                <g className="pointer" onClick={(e) => HandleClick("otros", "Otros")} transform="translate(0.001 0.001)">
                     <g id="Capa_2-2">
                         
                             <linearGradient id="Rectángulo_23-6_1_" gradientUnits="userSpaceOnUse" x1="-562.8671" y1="1080.9841" x2="-561.4531" y2="1080.9861" gradientTransform="matrix(188.0904 -188.0904 -188.0904 -188.0904 308587.375 99307.2578)">
@@ -629,7 +629,7 @@ export function Menu(){
                             C434.4,833.4,434.2,833.5,434.1,833.5L434.1,833.5z"/>
                     </g>
                 </g>
-                <g id="indication" transform="translate(-567.91 -924)">
+                <g className="pointer" id="indication" transform="translate(-567.91 -924)">
                     <g className="st2">
                         <path className="st9" d="M920,1053.8c-0.9,0-2.1-0.2-2.9-0.6l-0.4-2.6l0.3-0.1l0.4,1c0.3,0.8,1.2,1.5,2.7,1.5c1.4,0,2.7-0.8,2.7-2.3
                             c0-1.2-1-1.9-2-2.4l-1.2-0.6c-1.3-0.6-2.6-1.6-2.6-3.2c0-2.1,1.9-3.4,3.9-3.4c0.3,0,0.8,0,1.4,0.1c0.7,0.1,1,0.2,1.1-0.1l0.1-0.2
@@ -771,7 +771,7 @@ export function Menu(){
                         ))
                     }
                 </div>
-                <img src={seemore} onClick={() => HandleSeemore()} alt="" />
+                <img className="pointer" src={seemore} onClick={() => HandleSeemore()} alt="" />
             </div>
         </div>
     )
