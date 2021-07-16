@@ -1,0 +1,17 @@
+@mixin acuminligth(){
+    font-family: acumin-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin  lemondeBold {
+    font-family: le-monde-livre-std, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin lemondeRegular {
+    font-family: le-monde-livre-std, serif;
+    font-weight: 300;
+    font-style: normal;
+}

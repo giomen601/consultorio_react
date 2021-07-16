@@ -1,0 +1,139 @@
+@import url("https://use.typekit.net/pwi0jsz.css");
+@import "components/fonts";
+@import "components/variables";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.home-main-container{
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+
+    .txt-left{
+        text-align: left;
+        color: #000;
+    }
+
+    .txt-enter p{
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 22px;
+        @include acuminligth();
+    }
+
+    .svg-container{
+        width: 60%;
+        margin: auto;
+    }
+
+    .note-content{
+
+        .note-content__tit{
+            @include lemondeBold();
+            font-size: 20px;
+            margin-left: 2%;
+            margin-bottom: 25px;
+            color: $C_blueA;
+            text-transform: uppercase;
+            &.derecho-laboral{
+                color: $C_laboral;
+            }
+            &.deudas-y-bancos{
+                color: $C_bancos;
+            }
+            &.familia-y-divorcio{
+                color: $C_familia;
+            }
+            &.arriendos{
+                color: $C_blueA;
+            }
+            &.pensiones{
+                color: $C_pensiones;
+            }
+            &.otros{
+                color: $C_otros;
+            }
+        }
+        
+        .notecard{
+            width: 45%;
+            display: inline-block;
+            margin: auto 2%;
+            margin-bottom: 35px;
+            vertical-align: top;
+            a{
+                text-decoration: none;
+            }
+            
+            img{
+                width: 100%;
+            }
+
+            .title{
+                @include lemondeBold();
+                font-size: 19px;
+                line-height: 24px;
+                color: $C_blueA;
+                &.derecho-laboral{
+                    color: $C_laboral;
+                }
+                &.deudas-y-bancos{
+                    color: $C_bancos;
+                }
+                &.familia-y-divorcio{
+                    color: $C_familia;
+                }
+                &.arriendos{
+                    color: $C_blueA;
+                }
+                &.pensiones{
+                    color: $C_pensiones;
+                }
+                &.otros{
+                    color: $C_otros;
+                }
+            }
+
+            .date{
+                @include lemondeRegular();
+                font-size: 14px;
+                line-height: 23px;
+                color: $C_grayA;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .home-main-container{
+        width: 90%;
+
+        .note-content{
+            width: 80%;
+            margin: auto;
+            .notecard{
+                display: block;
+                width: 100%;
+                margin: 0;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .home-main-container{
+        .svg-container{
+            width: 90%;
+        } 
+
+        .note-content{
+            width: 100%;
+        }
+    }   
+}
